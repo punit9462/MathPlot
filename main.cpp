@@ -27,12 +27,11 @@ int main(int argc, char *argv[])
 {
     KAboutData aboutData("PlotView3DTest",
                          0,
-                         ki18n("PlotView3DTest"),
+                         ki18n("PlotView3D"),
                          "1.0",
-                         ki18n("PlotView3DTest"),
+                         ki18n("PlotView3D"),
                          KAboutData::License_LGPL_V3,
-                         ki18n("(c) 2012 Percy Camilo T. Aucahuasi"),
-                         ki18n("PlotView3DTest"),
+                         ki18n("PlotView3D"),
                          "http://www.kde.org");
 
     KCmdLineArgs::init(argc, argv, &aboutData);
