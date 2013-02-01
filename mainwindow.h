@@ -18,9 +18,13 @@
 #include <QLineEdit>
 #include <QPushButton>
 #include <QObject>
+#include <QMainWindow>
+#include <QDockWidget>
+#include <QListWidget>
+#include <QList>
 
 using namespace Analitza;
-class MainWindow : public QWidget
+class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
@@ -34,10 +38,16 @@ signals:
 public slots:
      void buttonclicked ();
 private:
+    QList<Qt::GlobalColor> list; //for colors
+    void createDockWindows();
+    void setColorList(); // saving colors in the list
     PlotsFactory* sfactory;
     QString equation ;
     PlotsModel *model;
     QLineEdit *textfield;
+    QDockWidget *dock;
+    QListWidget *PlotList;
+    int random; //random variable to get colors from the list.
 };
 
 #endif // MAINWINDOW_H
