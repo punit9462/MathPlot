@@ -5,10 +5,6 @@ find_package ( OpenGL REQUIRED )
 find_package ( Analitza REQUIRED )
 
 include_directories( ${KDE4_INCLUDES} ${CMAKE_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR}  ${ANALITZA_INCLUDE_DIR}  ${OPENGL_INCLUDE_DIR}  )
-set( plot_SRCS main.cpp mainwindow.cpp )
-kde4_add_executable( plot ${plot_SRCS} )
-
-include_directories( ${KDE4_INCLUDES} ${CMAKE_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR}  ${ANALITZA_INCLUDE_DIR}  ${OPENGL_INCLUDE_DIR}  )
 set( plot_SRCS main.cpp mainwindow.cpp ) 
 kde4_add_executable( plot ${plot_SRCS} ) 
 target_link_libraries( plot ${KDE4_KDEUI_LIBS}  ${KDE4_KFILE_LIBS}
