@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /**
  * Created by Punit Mehta
  * E-Mail : punit9462@gmail.com
@@ -7,8 +6,6 @@
 #include <kaboutdata.h>
 #include <kcmdlineargs.h>
 #include <mainwindow.h>
-
-=======
 #include <QMainWindow>
 #include <qtreeview.h>
 #include <qsplitter.h>
@@ -39,20 +36,17 @@ int main(int argc, char *argv[])
 {
     KAboutData aboutData("PlotView3DTest",
                          0,
-<<<<<<< HEAD
                          ki18n("PlotView3DTest"),
                          "1.0",
                          ki18n("PlotView3DTest"),
                          KAboutData::License_LGPL_V3,
                          ki18n("Plot Demo"),
                          ki18n("PlotView3DTest"),
-=======
                          ki18n("PlotView3D"),
                          "1.0",
                          ki18n("PlotView3D"),
                          KAboutData::License_LGPL_V3,
                          ki18n("PlotView3D"),
->>>>>>> 2907468fb16963912db5a064a89a6646af3b6154
                          "http://www.kde.org");
 
     KCmdLineArgs::init(argc, argv, &aboutData);
@@ -64,10 +58,4 @@ int main(int argc, char *argv[])
     QApplication app ( argc , argv );
     MainWindow  *window = new MainWindow(args);
     return app.exec();
-<<<<<<< HEAD
 }
-=======
-    }
->>>>>>> 2907468fb16963912db5a064a89a6646af3b6154
-
-
