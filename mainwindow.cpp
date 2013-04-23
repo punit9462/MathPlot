@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /**
  * Created by Punit Mehta
  * E-Mail : punit9462@gmail.com
@@ -9,7 +8,6 @@
 #include <QTreeView>
 #include <QMenu>
 #include <QMessageBox>
-=======
 #include "mainwindow.h"
 #include <qsplitter.h>
 #include <QGridLayout>
@@ -32,14 +30,12 @@
 #include <QStringList>
 #include <QDebug>
 #include <iostream>
->>>>>>> 2907468fb16963912db5a064a89a6646af3b6154
 
 using namespace Analitza;
 
 MainWindow::MainWindow(KCmdLineArgs* args)
 {
     this->setMinimumSize(640, 480);
-<<<<<<< HEAD
     m_menu = new QMenu(this);
     QSplitter *central = new QSplitter(Qt::Vertical, this);
     central->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
@@ -137,7 +133,6 @@ void MainWindow::afteritemchanged2(QListWidgetItem *item)
 }
 void MainWindow::changeActionclicked()
 {
-   // m_listwidget->setParent(m_changeActionDialogue);
     m_changeActionDialogue = new QWidget(this);
     m_changeActionDialogue->resize(200,200);
     QPoint point;
@@ -272,7 +267,6 @@ void MainWindow::deletesubmitClicked()
 void MainWindow::deletecloseClicked()
 {
     m_deleteActionDialogue->close();
-=======
     QSplitter *central = new QSplitter(Qt::Vertical, this);
     central->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     model = new PlotsModel(central);
@@ -329,5 +323,4 @@ void MainWindow::createDockWindows()
      PlotList = new QListWidget(dock);
      dock->setWidget(PlotList);
     addDockWidget(Qt::RightDockWidgetArea, dock);
->>>>>>> 2907468fb16963912db5a064a89a6646af3b6154
 }
