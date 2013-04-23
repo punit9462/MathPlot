@@ -19,7 +19,6 @@
 #include <analitza/expression.h>
 #include <QPushButton>
 #include <QLabel>
-<<<<<<< HEAD
 #include <QtCore/QString>
 #include <QLineEdit>
 #include <QtCore/QObject>
