@@ -29,7 +29,7 @@
 #include <QPushButton>
 #include <QObject>
 #include <mainwindow.h>
->>>>>>> 2907468fb16963912db5a064a89a6646af3b6154
+
 using namespace Analitza;
 
 int main(int argc, char *argv[])
