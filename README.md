@@ -1,7 +1,7 @@
 MathPlot
 ========
 
-Mathematical equation plotter in 3D spce using Analitza library 
+Mathematical function plotter in 3D spce using Analitza library 
 
 Features:-
 -----------
