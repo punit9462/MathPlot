@@ -1,3 +1,4 @@
+-- some compilation fix needed -- (Use MathPlotDemo :) ) 
 MathPlot
 ========
 
